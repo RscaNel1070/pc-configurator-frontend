@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import API_URL from "../config";
 
-const MAX_CONFIGS = 5; // Limite à 5 configurations sauvegardées
+const MAX_CONFIGS = 0; // Limite à 5 configurations sauvegardées
 
 const Configurator = () => {
   const [composants, setComposants] = useState([]);
@@ -112,7 +112,7 @@ const Configurator = () => {
       )}
 
       <div className="row">
-        {["CPU", "Carte Mère", "RAM", "GPU", "Stockage", "Alimentation", "Boîtier"].map((categorie, index) => (
+        {["CP", "Carte Mère", "RAM", "GPU", "Stockage", "Alimentation", "Boîtier"].map((categorie, index) => (
           <div className="col-md-6 mb-4" key={categorie}>
             <div className="p-3 border rounded bg-light">
               <h4 className="fw-bold text-primary">{categorie}</h4>
