@@ -112,7 +112,7 @@ const Configurator = () => {
       )}
 
       <div className="row">
-        {["CP", "Carte Mère", "RAM", "GPU", "Stockage", "Alimentation", "Boîtier"].map((categorie, index) => (
+        {["CPU", "Carte Mère", "RAM", "GPU", "Stockage", "Alimentation", "Boîtier"].map((categorie, index) => (
           <div className="col-md-6 mb-4" key={categorie}>
             <div className="p-3 border rounded bg-light">
               <h4 className="fw-bold text-primary">{categorie}</h4>
